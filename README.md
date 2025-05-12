@@ -6,17 +6,18 @@ Este projeto automatiza testes do e-commerce [EBAC Store](https://lojaebac.ebaco
 
 ## 📁 Estrutura do Projeto
 
+```
 cypress/
-├── actions/ # Ações reutilizáveis (ex: login, compra)
-├── e2e/ # Arquivos de teste (specs)
-│ ├── login.cy.js
-│ └── compra.cy.js
+├── actions/           # Ações reutilizáveis (ex: login, compra)
+├── e2e/               # Arquivos de teste (specs)
+│   ├── login.cy.js
+│   └── compra.cy.js
 ├── fixtures/
-│ └── usuario.json # Dados de entrada dos testes
-├── pages/ # Elementos (PageObjects)
+│   └── usuario.json   # Dados de entrada dos testes
+├── pages/             # Elementos (PageObjects)
 └── support/
-└── commands.js
-
+    └── commands.js
+```
 
 ---
 
@@ -33,52 +34,58 @@ Abra o terminal na raiz do projeto e execute:
 
 ```bash
 npm install
+```
 
+### 3. Executar os testes
 
-3. Executar os testes
-Modo interativo (GUI):
-bash
-Copiar
-Editar
+#### Modo interativo (GUI):
+
+```bash
 npx cypress open
+```
 
-📂 Resumo dos testes (e2e/)
-login.cy.js
-Testa o fluxo de login do usuário
+#### Modo headless (terminal):
 
-✅ Login com sucesso
+```bash
+npx cypress run
+```
 
-❌ Login com senha incorreta
+---
 
-Os dados vêm de fixtures/usuario.json
+## 📂 Resumo dos testes (`e2e/`)
 
-compra.cy.js
-Testa o fluxo completo de compra
+### `login.cy.js`
 
-Login com dados válidos
+> Testa o fluxo de login do usuário
 
-Seleção de um produto (cor e tamanho)
+- ✅ Login com sucesso
+- ❌ Login com senha incorreta
+- Os dados vêm de `fixtures/usuario.json`
 
-Adição ao carrinho
+### `compra.cy.js`
 
-Preenchimento dos dados do checkout
+> Testa o fluxo completo de compra
 
-Finalização do pedido
+- Login com dados válidos
+- Seleção de um produto (cor e tamanho)
+- Adição ao carrinho
+- Preenchimento dos dados do checkout
+- Finalização do pedido
+- Validação da mensagem de sucesso
 
-Validação da mensagem de sucesso
+---
 
-✅ Tecnologias Utilizadas
-Cypress
+## ✅ Tecnologias Utilizadas
 
-JavaScript (ES6+)
+- Cypress
+- JavaScript (ES6+)
+- Node.js
+- Page Object Model (POM)
+- Testes orientados a dados com `fixtures`
 
-Node.js
+---
 
-Page Object Model (POM)
+## 📌 Dicas
 
-Testes orientados a dados com fixtures
-
-📌 Dicas
-Você pode alterar os dados de teste em cypress/fixtures/usuario.json
-
-Para testes com múltiplos perfis, basta adicionar mais entradas no JSON e iterar nos testes
+- Você pode alterar os dados de teste em `cypress/fixtures/usuario.json`
+- Para testes com múltiplos perfis, basta adicionar mais entradas no JSON e iterar nos testes
