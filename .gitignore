@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+package-lock.json
+.env
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+
+# VSCode
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage (caso use cobertura de testes)
+coverage/

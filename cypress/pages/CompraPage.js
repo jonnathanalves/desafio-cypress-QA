@@ -1,0 +1,22 @@
+export const CompraElements = {
+  home: '[class="dropdown menu-item-536 aligned-left"]',
+  produto: '[class="product-block grid"]',
+  tamanho: (tamanho) => `.button-variable-item-${tamanho}`,
+  cor: (cor) => `.button-variable-item-${cor}`,
+  botaoAdicionar: '.single_add_to_cart_button',
+  botaoVerCarrinho: '.woocommerce-message > .button',
+  botaoCheckout: '.checkout-button',
+  inputNome: '#billing_first_name',
+  inputSobrenome: '#billing_last_name',
+  inputEndereco: '#billing_address_1',
+  inputCidade: '#billing_city',
+  inputCEP: '#billing_postcode',
+  inputTelefone: '#billing_phone',
+  inputEmail: '#billing_email',
+  seletorEstado: '#select2-billing_state-container',
+  campoBuscaEstado: '.select2-search__field',
+  pagamentoBoleto: '#payment_method_bacs',
+  botaoFinalizar: '#place_order',
+  checkLiConcordo: '#terms',
+  mensagemSucesso: '.woocommerce-notice'
+}

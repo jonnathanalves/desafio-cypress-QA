@@ -1,0 +1,21 @@
+{
+  "login": {
+    "email": "jonnathanalvesteixeira@gmail.com",
+    "senha": "senhaebac",
+    "usuario": "jonnathanalvesteixeira"
+  },
+  "cliente": {
+    "nome": "Fulano",
+    "sobrenome": "Silva",
+    "endereco": "Rua Teste 123",
+    "cidade": "São Paulo",
+    "estado": "São Paulo",
+    "cep": "01001-000",
+    "telefone": "11999999999",
+    "email": "fulano@teste.com"
+  },
+  "produto": {
+    "tamanho": "M",
+    "cor": "Red"
+  }
+}
