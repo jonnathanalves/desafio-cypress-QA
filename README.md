@@ -59,7 +59,6 @@ npx cypress run
 > Testa o fluxo de login do usuário
 
 - ✅ Login com sucesso
-- ❌ Login com senha incorreta
 - Os dados vêm de `fixtures/usuario.json`
 
 ### `compra.cy.js`
